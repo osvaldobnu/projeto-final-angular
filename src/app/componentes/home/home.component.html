@@ -1,0 +1,27 @@
+<header>
+  <h2>Home</h2>
+
+  <form #formLogout="ngForm" (ngSubmit)="deslogar()" >
+    <input
+      type="submit"
+      value="Deslogar"
+    />
+  </form>
+</header>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts" >
+        <td> {{ post.id }} </td>
+        <td> {{ post.title }} </td>
+        <td> {{ post.body }} </td>
+    </tr>
+  </tbody>
+</table>

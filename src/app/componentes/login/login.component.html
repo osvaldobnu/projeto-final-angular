@@ -1,0 +1,28 @@
+<div class="login-form">
+  <h2>Login</h2>
+  <form #userForm="ngForm" (ngSubmit)="submit(userForm.value)">
+    <div class="form-group">
+      <label>Nome</label>
+      <input
+        type="text"
+        ngModel
+        name="nome"
+        placeholder="Digite seu nome..."
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Senha</label>
+      <input
+        type="password"
+        ngModel
+        name="senha"
+        placeholder="Digite sua senha..."
+        class="form-control"
+      />
+    </div>
+
+    <input type="submit" id="login" value="Logar" class="btn btn-primary" />
+  </form>
+</div>
